@@ -1,0 +1,285 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pramod Nangarale | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Fira+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Fira Sans', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #f1f1f1;
+      line-height: 1.7;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+    nav .logo {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #00ffe1;
+      font-family: 'Outfit', sans-serif;
+    }
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    nav ul li a {
+      color: #ffffffcc;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00ffe1;
+    }
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #00ffe1;
+    }
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      list-style: none;
+    }
+    .skills ul li {
+      background: #00ffe1;
+      color: #0f0c29;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0, 255, 225, 0.4);
+    }
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+    .project-card {
+      background: #1f1b3a;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+    .project-card p {
+      color: #ccc;
+      margin: 0.5rem 0 1rem;
+    }
+    .project-card a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border: 1.5px solid #00ffe1;
+      color: #00ffe1;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .project-card a:hover {
+      background: #00ffe1;
+      color: #121212;
+    }
+    form {
+      background: #1f1b3a;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 225, 0.2);
+    }
+    form label {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.2rem;
+      border-radius: 6px;
+      border: none;
+      background: #2e2b50;
+      color: #f1f1f1;
+      font-size: 1rem;
+    }
+    form button {
+      background: #00ffe1;
+      color: #121212;
+      font-weight: bold;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #5fffe7;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Pramod Nangarale</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  <section id="about">
+    <h1>Hello, I'm Pramod Nangarale</h1>
+    <p>I am a passionate software developer and final-year mentor who thrives on building meaningful learning experiences and scalable technology solutions. With hands-on experience in C/C++, Java, OOPs, and full-stack web development, I bring both technical skill and the ability to communicate complex ideas clearly. <br><br>My teaching passion has led me to guide numerous students in their academic projects, enhancing their logic-building and problem-solving skills. I believe in continuous learning, collaborative growth, and using tech to make education more accessible and impactful.</p>
+  </section>  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C Programming</li>
+      <li>C++</li>
+      <li>Object-Oriented Programming (OOPs)</li>
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>React.js</li>
+      <li>Bootstrap</li>
+      <li>MySQL</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio built using HTML, CSS, and JavaScript. Features responsive design and showcases my skills, projects, and contact info.</p>
+        <a href="https://pramod-droid.github.io/myportfoliosite/" target="_blank">Visit Site</a>
+      </div>
+      <div class="project-card">
+        <h3>Video Conferencing Web App</h3>
+        <p>Developed using React.js and PeerJS, includes room-based access, screen sharing, file transfer, and real-time chat features.</p>
+        <a href="https://pramoddemo.vercel.app" target="_blank">Live Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Student Management System</h3>
+        <p>Created in C++ with file handling for managing student attendance, results, and fee records.</p>
+      </div>
+      <div class="project-card">
+        <h3>Attendance Management System</h3>
+        <p>C/C++ CLI-based app for recording daily attendance, generating reports, and managing student data.</p>
+      </div>
+      <div class="project-card">
+        <h3>Student Result Management</h3>
+        <p>CLI-based system in C++ to input marks, compute grades, and generate detailed student reports.</p>
+      </div>
+      <div class="project-card">
+        <h3>Fees Management System</h3>
+        <p>Java console application that tracks student fee payments, categories, penalties, and status reporting.</p>
+      </div>
+      <div class="project-card">
+        <h3>Library Management System</h3>
+        <p>Java + MySQL system for handling book records, issuing/returning transactions, and user management.</p>
+      </div>
+      <div class="project-card">
+        <h3>E-Commerce Website</h3>
+        <p>Responsive frontend store created with HTML/CSS/JS featuring cart logic, filtering, and price calculations.</p>
+      </div>
+      <div class="project-card">
+        <h3>Bank Management System</h3>
+        <p>C++ CLI software simulating bank account operations like deposit, withdraw, balance inquiry using file persistence.</p>
+      </div>
+      <div class="project-card">
+        <h3>College Dashboard</h3>
+        <p>Dashboard UI built with HTML/CSS/JS managing students, faculty, and attendance with export features.</p>
+      </div>
+    </div>
+  </section> <section id="contact">
+  <h2>Contact Me</h2>
+  <p>Want to collaborate or have a question? Feel free to reach out via the icons or the form below!</p>
+
+  <!-- Social Icons -->
+  <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+    <!-- Email -->
+    <a href="mailto:nangaralepramod@gmail.com" target="_blank" title="Email">
+      <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Email" width="32" height="32">
+    </a>
+    <!-- GitHub -->
+    <a href="https://github.com/Pramod-droid" target="_blank" title="GitHub">
+      <img src="https://img.icons8.com/ios-glyphs/48/00ffe1/github.png" alt="GitHub" width="32" height="32">
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/pramodnangarale" target="_blank" title="LinkedIn">
+      <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn" width="32" height="32">
+    </a>
+    <!-- Blogger -->
+    <a href="https://pramodnangarale.blogspot.com" target="_blank" title="Blogger">
+      <img src="https://img.icons8.com/color/48/blogger.png" alt="Blogger" width="32" height="32">
+    </a>
+
+  </div><a href="https://drive.google.com/uc?export=download&id=15Xa5a1hqoUjxUeyiokxmAgePSTGxAJxm" 
+   target="_blank" 
+   download 
+   style="
+     display: inline-block;
+     margin-top: 1.5rem;
+     padding: 0.75rem 1.8rem;
+     background-color: #00ffe1;
+     color: #121212;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: bold;
+     box-shadow: 0 0 12px rgba(0, 255, 225, 0.3);
+     transition: all 0.3s ease;
+   "
+   onmouseover="this.style.backgroundColor='#5fffe7'; this.style.color='#000'"
+   onmouseout="this.style.backgroundColor='#00ffe1'; this.style.color='#121212'">
+   📄 Download Resume
+</a>
+
+
+
+  <!-- Contact Form -->
+  <form action="https://formspree.io/f/mqabbvga" method="POST" style="margin-top: 2rem;">
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" required>
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+    <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+  </form>
+</section>
+<footer>
+    &copy; 2025 Pramod Nangarale. All rights reserved.
+  </footer>
+</body>
+</html>
